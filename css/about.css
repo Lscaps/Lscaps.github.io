@@ -1,0 +1,70 @@
+main > div {
+    background-color: #f5e2c7;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 20px;
+    text-align: left;
+}
+
+main > div > h2 {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+main > div > p {
+    font-size: 18px;
+}
+
+main {
+    background-color: #6D435A;
+    display: grid;
+    grid-template-areas: 
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.';
+    gap: 20px;
+    padding: 20px;
+}
+
+main > div > dl > dt {
+    font-size: medium;
+}
+
+main > div > dl {
+    font-size: small;
+}
+
+#strawby {
+    width: 100%;
+    height: auto;
+    border-radius: 75%;
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    #container2 {
+        grid-area: area2;
+    }
+
+    #container3 {
+        grid-area: area3;
+    }
+
+    main {
+    grid-template-areas:
+    '. area3 .'
+    'area2 area3 .'
+    'area2 area3 .';
+    }
+
+
+
+
+}
